@@ -3,7 +3,7 @@ document.getElementById('loading').style.display = 'block';
 document.querySelector('table').style.display = 'none';
 
 // Fetch data from FastAPI backend
-fetch('http://localhost:8000/api/order-tracking/')
+fetch('https://5da7-14-191-119-15.ngrok-free.app/api/order-tracking/')
     .then(response => response.json())
     .then(data => {
         const orders = data.orders;  // Dữ liệu đơn hàng từ API
